@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Camera Demo</title>
+  <link rel="stylesheet/less" type="text/css" href="camera-demo.less"/>
+  <script src="less.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="camera-demo.css">
+  <script type="text/javascript" src="camera-demo.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="product-category">Home / Photography / Digital Cameras / DSLR Cameras / <span class="bold">Canon EOS 5D Mark IV</span></div>
+    <div id="product-title">
+      <span id="canon-title">Canon EOS 5D Mark IV DSLR Camera (Body Only)</span>&nbsp&nbsp&nbsp&nbsp&nbsp<span id="number-title">B&H # CAE5D4 • MFR # 1483C002</span>
+    </div>
+    <div id="product-content">
+      <div id="product-display">
+        <div id="product-logos">
+          <div id="logo-text">
+            <img id="canon-logo" src="pictures/canon_8_logo.gif"/>
+            <div id="authorized">Authorized Dealer</div>
+          </div>
+          <img id="badge" src="pictures/HolidayBadge_TopSeller.png"/>
+        </div>
+        <div class="product-image-wrapper">
+          <img class="product-image" src="pictures/canon_8.jpg"/>
+        </div>
+        <div id="product-thumbnails">
+          <img src="pictures/thumb_1.jpg" id="first-thumbnail" class="thumbnail"/>
+          <img src="pictures/thumb_2.jpg" class="thumbnail"/>
+          <img src="pictures/thumb_3.jpg" class="thumbnail"/>
+          <img src="pictures/thumb_4.jpg" class="thumbnail"/>
+          <img src="pictures/thumb_5.jpg" class="thumbnail"/>
+          <img src="pictures/thumb_6.jpg" class="thumbnail"/>
+          <img src="pictures/thumb_7.jpg" class="thumbnail"/>  
+        </div>
+      </div>
+      <div id="product-info">
+        <div id="shipping">
+          <div id="in-stock">In Stock</div>
+          <div id="order-now"><a href="#">Order <span class="bold">now</span> to ship <span class="bold">today</span></a></div>
+          <div id="calculate-shipping"><a href="#" class="bold">Calculate Shipping</a></div>
+        </div>
+        <div id="product-highlights">
+          <div id="product-highlights-text">PRODUCT HIGHLIGHTS</div>
+          <div class="highlights">- 30.4MP Full-Frame CMOS Sensor</div>
+          <div class="highlights">- DIGIC 6+ Image Processor</div>
+          <div class="highlights">- 3.2" 1.62m-Dot Touchscreen LCD Monitor</div>
+          <div class="highlights">- DCI 4K Video at 30 fps; 8.8MP Still Grab</div>
+          <div id="show-more"><a href="#">Show more</a></div>
+        </div>
+        <div id="reviews">
+          <div class="review-stars">
+            <svg class="stars" viewBox="0 0 371.5 66.3" width="100%" height="100%"><polygon points="42.2,25.3 33.2,0 24.2,25.3 0,25.3 19.7,40.2 12.7,66.3 33.2,50.7 53.7,66.3 46.6,40.2 66.3,25.3"></polygon><polygon points="118.5,25.3 109.5,0 100.5,25.3 76.3,25.3 96,40.2 89,66.3 109.5,50.7 130,66.3 122.9,40.2 142.6,25.3"></polygon><polygon points="194.8,25.3 185.8,0 176.8,25.3 152.6,25.3 172.3,40.2 165.3,66.3 185.8,50.7 206.3,66.3 199.2,40.2 219,25.3"></polygon><polygon points="271.1,25.3 262.1,0 253.1,25.3 229,25.3 248.7,40.2 241.6,66.3 262.1,50.7 282.6,66.3 275.6,40.2 295.3,25.3"></polygon><polygon points="371.5,25.3 347.4,25.3 338.4,0 329.4,25.3 305.2,25.3 324.9,40.2 317.9,66.3 338.4,50.7 358.8,66.3 351.8,40.2"></polygon></svg>
+            <div id="reviews-text"><a href="#" id="reviews-533"><span>Reviews</span> <span class="link-number">533</span></a><a href="#" id="q-and-a"><span>Q&A</span> <span class="link-number">153</span></a></div>
+          </div>
+        </div>
+        <div id="selection-form">
+          <div id="style">
+            <div id="style-text">Style: <span class="bold">Body Only</span></div>
+            <form id="style-form">
+              <select name="style" class="dropdown select1">
+                <option value="body-only">Body Only</option>
+                <option value="with-canon-log">With Canon Log</option>
+                <option value="with-24-70mm">With 24-70mm Lens</option>
+                <option value="with-24-105mm">With 24-105mm f/4L II Lens</option>
+              </select>
+            </form>
+          </div>
+          <div id="configuration">
+            <div id="configuration-text">Configuration: <span class="bold">Base</span></div>
+            <form id="configuration-form">
+              <select name="configuration" class="dropdown select1">
+                <option value="base">Base</option>
+                <option value="with-basic-kit">With Basic Kit</option>
+                <option value="with-deluxe-kit">With Deluxe Kit</option>
+                <option value="with-video-kit">With Video Kit</option>
+                <option value="with-microphone-kit">With Microphone Kit</option>
+              </select>
+            </form>
+          </div>
+        </div>  
+        <div id="rebates">
+          <div id=conditional-rebates>CONDITIONAL REBATES <a href="#" id="see-details">See Details</a></div>
+          <div class="rebates-text">- Conditional Mail In Rebate <span class="offer-ends">Offer ends: DEC 31 '17</span></div>
+          <div class="rebates-text">- Conditional Mail In Rebate <span class="offer-ends">Offer ends: DEC 31 '17</span></div>
+        </div>   
+      </div>
+      <div id="cart-right">
+        <div id="to-cart-box">
+          <div id="price-info">
+            <div>Price: $3,499.00</div>
+            <div>Instant Savings: <span id="instant-savings-amount">$200.00</span></div>
+            <div id="tax-collected">$0.00 Tax Collected Outside NY and NJ</div>
+          </div>
+          <div id="you-pay">
+            <div><span id="you-pay-text">You Pay: </span><span id="you-pay-amount">$3,299.00</span></div>
+          </div>
+          <div id="reward"><a>Receive 2% Reward</a></div>
+          <div id="cart-form">
+            <div id="quantity">
+              <form>
+                <input value="1" id="qty-input"><span id="qty">QTY</span>
+              </form>
+            </div>
+            <div id="button-wrapper">
+              <button id="cart-button">Add to Cart</button>
+              <div id="show-cart-header"></div>
+            </div>
+            <div id="wish-list">
+              <form>
+                <select name="wish-list" class="dropdown select1">
+                  <option value="add-to-wish-list">Add to Wish List</option>
+                </select>
+              </form>
+            </div>
+          </div>
+        </div>
+<!--  <div id="build-bundle">
+<button>Build Bundle</button>
+<div>Save Up to $20.00</div>
+</div>
+<div id="trade-in-for-cash">
+<a href="#">TRADE IN YOUR GEAR FOR CASH</a>
+</div>
+<div id="ask-our-experts">&nbsp&nbsp&nbsp
+<img src="ask_our_experts.png">
+<div>True Know-How</div>
+<div>Ask Our Experts</div>
+<div><a href="#">Live Chat</a><span>800.606.6969</span><a href="#">Email</a></div>
+</div> -->
+</div>
+</div>
+<div id="recommended-accessories">
+  <div id="recommended-accessories-title">Recommended Accessories&nbsp&nbsp&nbsp<span id="view-all">View All</span></div>
+  <div id="accessories">
+    <table id="accessories-table">
+      <tr>
+        <td class="accessories-row-1">
+          <div class="accessory-container">
+            <div class="accessory-image-wrapper">
+              <img src="pictures/accessory_1.jpg" class="accessory-images">
+            </div>
+            <div class="accessory-info-cart">
+              <div class="accessory-title-1">SanDisk 64GB Extreme PRO</div>
+              <div class="accessory-title-2">CompactFlash & 64GB</div>
+              <div class="accessory-price">$99.99</div>
+              <button class="accessory-cart-button">Add to Cart</button>
+            </div>
+          </div>
+        </td>
+        <td class="accessories-row-1">
+          <div class="accessory-container">
+            <div class="accessory-image-wrapper">
+              <img src="pictures/accessory_2.jpg" class="accessory-images">
+            </div>
+            <div class="accessory-info-cart">
+             <div class="accessory-title-1">Canon EF 16.35mm f/2.8L III</div>
+             <div class="accessory-title-2">USM Lens</div>
+             <div class="accessory-price">$1,999.00</div>
+             <button class="accessory-cart-button">Add to Cart</button>
+           </div>
+         </div>
+       </td>
+       <td class="accessories-row-1">
+        <div class="accessory-container">
+          <div class="accessory-image-wrapper">
+            <img src="pictures/accessory_3.jpg" class="accessory-images">
+          </div>
+          <div class="accessory-info-cart">
+           <div class="accessory-title-1">Canon CarePAK PLUS 2-Year</div>
+           <div class="accessory-title-2">Service Plan for EOS DSLRs</div>
+           <div class="accessory-price">$169.99</div>
+           <button class="accessory-cart-button">Add to Cart</button>
+         </div>
+       </div>
+     </td>
+     <td class="accessories-row-1">
+      <div class="accessory-container">
+        <div class="accessory-image-wrapper">
+          <img src="pictures/accessory_3.jpg" class="accessory-images">
+        </div>
+        <div class="accessory-info-cart">
+         <div class="accessory-title-1">Canon CarePAK PLUS 3-Year</div>
+         <div class="accessory-title-2">Service Plan for EOS DSLRs</div>
+         <div class="accessory-price">$243.99</div>
+         <button class="accessory-cart-button">Add to Cart</button>
+       </div>
+     </div>
+   </td>
+ </tr>
+ <tr>
+  <td>
+    <div class="accessory-container">
+      <div class="accessory-image-wrapper">
+        <img src="pictures/accessory_4.jpg" class="accessory-images">
+      </div>
+      <div class="accessory-info-cart">
+        <div class="accessory-title-1">Canon LP-E6N Lithium-Ion</div>
+        <div class="accessory-title-2">Battery Pack (7.2V, 1865mAh)</div>
+        <div class="accessory-price">$64.00</div>
+        <button class="accessory-cart-button">Add to Cart</button>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="accessory-container">
+      <div class="accessory-image-wrapper">
+        <img src="pictures/accessory_5.jpg" class="accessory-images">
+      </div>
+      <div class="accessory-info-cart">
+        <div class="accessory-title-1">Canon BG-E20 Battery Grip</div>
+        <div class="accessory-title-2">for EOS 5D Mark IV</div>
+        <div class="accessory-price">$309.00</div>
+        <button class="accessory-cart-button">Add to Cart</button>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="accessory-container">
+      <div class="accessory-image-wrapper">
+        <img src="pictures/accessory_6.jpg" class="accessory-images">
+      </div>
+      <div class="accessory-info-cart">
+        <div class="accessory-title-1">Think Tank Photo</div>
+        <div class="accessory-title-2">Retrospective 7 Shoulder</div>
+        <div class="accessory-price">$162.75</div>
+        <button class="accessory-cart-button">Add to Cart</button>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="accessory-container">
+      <div class="accessory-image-wrapper">
+        <img src="pictures/accessory_7.jpg" class="accessory-images">
+      </div>
+      <div class="accessory-info-cart">
+        <div class="accessory-title-1">Canon Speedlite 600EX II-RT</div>
+        <div class="accessory-title-2">&nbsp</div>
+        <div class="accessory-price">$479.00</div>
+        <button class="accessory-cart-button">Add to Cart</button>
+      </div>
+    </div>
+  </td>
+</tr>
+</table>
+</div>
+</div>
+<div id="stick-footer"></div>
+  <nav id="info-footer">
+    <div id="footer-buttons-wrapper">
+      <table>
+        <tr>
+          <td><button class="footer-button" id="footer-overview">OVERVIEW</button></td>
+          <td><button class="footer-button" id="footer-specs">SPECS</button></td>
+          <td><button class="footer-button" id="footer-quick-compare">QUICK COMPARE</button></td>
+          <td><button class="footer-button" id="footer-reviews">REVIEWS&nbsp&nbsp<span class="footer-button-small-text">533</span></button></td>
+          <td><button class="footer-button" id="footer-q-and-a">Q&A&nbsp&nbsp<span class="footer-button-small-text">155</span></button></td>
+          <td><button class="footer-button" id="footer-add-on-savings">ADD-ON SAVINGS</button></td>
+          <td><button class="footer-button" id="footer-accessories">ACCESSORIES</button></td>
+        </table>
+      </div>
+    </nav> 
+    <div id="footer-attach"> 
+    <div id="overview">
+       <nav id="left-navbar">
+        <div id="left-navbar-1" class="left-nav-div"><span class="left-nav-number-top">1</span></div>
+        <div id="left-navbar-2" class="left-nav-div"><span class="left-nav-number">2</span></div>
+        <div id="left-navbar-3" class="left-nav-div"><span class="left-nav-number">3</span></div>
+        <div id="left-navbar-4" class="left-nav-div"><span class="left-nav-number">4</span></div>
+        <div id="left-navbar-5" class="left-nav-div"><span class="left-nav-number">5</span></div>
+        <div id="left-navbar-6" class="left-nav-div"><span class="left-nav-number">6</span></div>
+        <div id="left-navbar-7"><span class="left-nav-number-bottom">7</span></div>
+      </nav>
+      <div id="overview-title">Canon 5D Mark IV Overview</div>
+      <div id="overview-content">
+      <div id="overview-header">
+        <span><img src="pictures/overview_pic.jpg" id="overview-header-image" /><span>
+          <span id="overview-header-text">In the Field with the Canon 5D Mark IV</span>
+          <button id="overview-header-button">Read More</button>
+        </div>
+        <div class="video-wrapper">
+          <div class="section-1-video"><img src="pictures/canon_video.png" class="canon-video" /></div>
+          <div class="first-look"><span class="right-arrow">&#9658</span><a class="first-look-text">First Look: Canon EOS 5D Mark IV</a></div>
+          <div class="upgrade-details"><a class="upgrade-details-text">EOS 5D Mark IV Canon Log Upgrade Details</a></div>
+        </div>
+        <div id="section-1">
+          <div id="section-1-italic">
+            Continuing on in their legacy of powerful workhorse cameras, <span class="bold">Canon</span> has released the <span class="bold">5D Mark IV DSLR</span> which is an outstanding still photography option and an able 4K-capable video machine. This multimedia maven offers a newly developed 30.4MP full-frame CMOS sensor paired with the DIGIC 6+ image processor in order to balance fine detail and resolution with low-light performance and sensitivity. It is able to work within a native range of ISO 100-32000, which can then be expanded to an impressive ISO 50-102400, for sharp, low-noise images in a variety of conditions. Along with these improvements to image quality, users will enjoy a performance boost across the board with an enhanced AF system, built-in Wi-Fi, NFC, and GPS, and much more.
+          </div>
+            <br>
+          In order to deliver detailed images quickly and effectively the 5D Mark IV leverages the power of the DIGIC 6+ image processor, which can handle up to 7 frames per second during continuous shooting. It also uses a 150,000-pixel RGB+IR metering sensor to evaluate the scene and subjects for accurate exposures under a variety of different lighting conditions. An improved 61-point High Density Reticular AF furthers the camera's speed by tracking and locking onto subjects quickly and accurately for tack sharp photos. A new AF area select button is now available as well for near immediate access to this setting.
+          <br>
+          <br>
+          Video benefits from the addition of Dual Pixel CMOS AF and Movie Servo AF to smoothly rack focus during a shot. Shooters can even make use of the 3.2" 1.62m-dot touchscreen LCD to simply tap to adjust the focus point. Furthermore, now that the camera has DCI 4K (4096 x 2160) video recording at up to 30 fps, users can snag 8.8MP stills from the video for an even faster capture option. Tied into the Dual Pixel sensor architecture is a brand new feature for Canon: Dual Pixel RAW, which allows for fine tuning of certain image parameters, including bokeh shift and focus micro adjustment, after the image is taken.
+          <br>
+          <br>
+          The body has been further refined for comfort and ease of access, as well as durability and weather resistance. The Canon N3 remote port has been relocated to the front of the camera body and they have added both GPS and Wi-Fi with NFC to make this model a connected camera.
+      </div>
+        <div id="section-2">
+          <div id="section-2-title" class="section-titles">30.4MP Full-Frame CMOS Sensor and DIGIC 6+ Image Processor</div>
+          In line with previous members of the main 5D series, the Mark IV attempts to balance high resolution with low-light performance with a newly developed 30.4MP full-frame CMOS sensor. This provides a beneficial increase in overall resolution without compromising on sensitivity. Additionally, thanks to the DIGIC 6+ image processor it is paired with, it offers impressive performance within a native range of ISO 100-32000, which can be expanded to ISO 50-102400. 
+          <br>
+          <br>
+          Versatility is key with the 5D, as it needs to be able to tackle landscapes and weddings with equal ease. By using a 150,000-pixel RGB+IR metering sensor shooters will be able to more comfortably rely on the camera to capture difficult scenes. This sensor also has face detection as well as flicker detection which can ensure proper exposure in less-than-ideal lighting situations. Along with this, the camera offers an improved continuous shooting rate of 7 fps, making it a great option for events and action.
+        </div>
+        <div id="section-3">
+          <div id="section-3-title" class="section-titles">High Density Reticular AF and Dual Pixel CMOS AF Systems</div>
+          Ensuring your subject is tack sharp, the 5D Mark IV incorporates an enhanced High Density Reticular AF system, which offers 61 phase-detect points, with all points sensitive to f/8 and 41 of which are cross-type. The center point can function down to -3 EV for working in extremely dim lighting. Compared to previous versions, this sensor has expanded vertical coverage of 24% on the peripherals and 8% in the center in order to better track and locate subjects in the frame. 
+          <br>
+          <br>
+          In addition to advanced tracking and focusing while using the optical finder for stills, Live View and video can now use Dual Pixel CMOS AF on the actual imaging sensor. This offers about 80% coverage of phase-detection autofocus for faster and more accurate focusing in these modes. It is ideal for video as users will enjoy smoother rack focusing without the downsides normally encountered with contrast-based systems. Also, this works well with the touchscreen 
+        </div>
+        <div id="section-4">
+          <div id="section-4-title" class="section-titles">DCI 4K Video Recording</div>
+          Designed for both professional stills shooting and video recording, the 5D Mark IV supports DCI 4K (4096 x 2160) resolution recording at up to 30 fps at 500 Mbps, along with Full HD 1080p shooting at 60 fps and HD 720p at 120 fps for slow motion playback. When recording in-camera, 4K video has 4:2:2 sampling and 8-bit color depth, while Full HD 1080p footage has 4:2:0 sampling. Uncompressed Full HD 1080p video can also be saved via HDMI to an optional external recorder with 4:2:2 color sampling. 4K video is recorded using a central 4096 x 2160 area of the sensor at a 1.74x crop in order to record video with an ideal 1:1 pixel sampling ratio, while Full HD recording makes use of the entire full frame. 
+          <br>
+          <br>
+          Audio can be recorded using the on-board stereo microphone or an optional external mic can also be used via the 3.5mm mic jack. Real time audio monitoring is possible, too, via the 3.5mm headphone jack. The 4K video recording also avails the ability to take 8.8MP still frame grabs during playback on the rear touchscreen and save them as single images.
+        </div>
+        <div id="section-5">
+          <div id="section-5-title" class="section-titles">Dual Pixel RAW</div>
+          First implemented here on the 5D Mark IV, Dual Pixel RAW allows photographers to record all the information the sensor's unique pixel architecture can deliver, providing a way for fine adjustments to be made after the image is taken. These adjustments include focus fine tuning that can help you ever-so-slightly adjust the focus point to bring out extra details, shift bokeh around for improved composition, and reduce the impact of ghosting on your photos. This requires the use of Canon's Digital Photo Professional 4.5 software.
+        </div>
+        <div id="section-6">
+          <div id="section-6-title" class="section-titles">Body Design</div>
+          <ul>
+            <li>
+              <span class="list-text">
+          A large 3.2" 1.62m-dot Clear View II LCD monitor is available and features an anti-reflective design for bright, vivid image playback and live view shooting, and its touchscreen interface can be used for intuitive touch-to-focus control and adjusting settings in the menus.
+        </span>
+        </li>
+        <br>
+        <li>
+          <span class="list-text">
+          A dedicated AF mode selection button located beneath the rear joystick offers another avenue for accessing settings, allowing for fast, intuitive access to commonly changed options.
+        </span>
+        </li>
+         <br>
+        <li>
+          <span class="list-text">
+          Dual CompactFlash and SD memory card slots allow you to extend your file saving capabilities by permitting overflow recording or in-camera file type separation while shooting.
+        </span>
+        </li>
+         <br>
+        <li>
+          <span class="list-text">
+          An Intelligent Viewfinder II uses a pentaprism design and offers a bright means for viewing. When using the viewfinder, AF points are highlighted in red for greater visibility in low-light conditions, and the finder can also be configured to display a range of other shooting aids, such as an electronic level, grid, flicker detection, white balance, metering mode, AF information, and other settings.
+        </span>
+        </li>
+         <br>
+        <li>
+          <span class="list-text">
+          A Mirror Vibration Control System helps to minimize mechanical vibrations in order to better ensure sharpness during long exposures or fast continuous shooting bursts.
+          </span>
+          </li>
+           <br>
+          <li>
+            <span class="list-text">
+          A robust magnesium alloy body design is both dust- and weather-sealed to permit working in harsh environments.
+        </span>
+        </li>
+          </div>
+          <div id="section-7">
+            <div id="section-7-title" class="section-titles">Other Camera Features</div>
+            <ul>
+              <li>
+                <span class="list-text">
+                A built-in GPS module allows you to geotag imagery in-camera as well as auto time sync with the Universal Time Code via satellites. This module is compatible with American GPS, Russian GLONASS, and Japanese quasi-zenith Michibiki satellites for a wide coverage of support.
+              </span>
+              </li>
+               <br>
+              <li>
+                <span class="list-text">
+            Digital Lens Optimizer technology compensates for a range of optical defects from various lenses, including chromatic aberration, distortion, peripheral brightness, and diffraction, and the camera can store lens data in order to avoid having to re-register lenses prior to each use. The camera can handle this process in real time, delivering JPEGs with the corrections already applied.
+          </span>
+          </li>
+           <br>
+          <li>
+            <span class="list-text">
+            A built-in intervalometer permits the creation of time lapse imagery and supports recording 1-99 consecutive frames in pre-selected intervals from 1 second to 99 hours 59 minutes and 59 seconds. Users can also choose to set the camera to unlimited frames.
+          </span>
+          </li>
+           <br>
+          <li>
+            <span class="list-text">
+            Built-in Wi-Fi and NFC connectivity enable wireless sharing, control, and image transfer with a compatible smart device as well as the CS100 Connect Station.
+            </span>
+          </li>
+          </div>
+        </div>
+        </div>
+        <div class="overview-sidebar">
+          <div class="in-the-box">
+            <div class="sidebar-title">In the Box</div>
+            <div class="sidebar-text">Canon EOS 5D Mark IV DSLR Camera (Body Only)</div>
+            <div class="sidebar-text"><a>LP-E6N Lithium-Ion Battery Pack (7.2V, 1865mAh)</a></div>
+            <div class="sidebar-text"><a>LC-E6 Charger for LP-E6 Battery Pack</a></div>
+            <div class="sidebar-text"><a>Eyecup Eg</a></div>
+            <div class="sidebar-text"><a>RF-3 Body Cap for Canon EOS Cameras</a></div>
+            <div class="sidebar-text"><a>IFC-150U II USB 3.0 Interface Cable for DSLRs</a></div>
+            <div class="sidebar-text">Cable Protector</div>
+            <div class="sidebar-text">Wide Neck Strap</div>
+            <div class="sidebar-text">Software CD-ROM</div>
+            <div class="sidebar-text">Limited 1-Year Warranty</div>
+          </div>
+          <div class="includes-free">
+            <div class="sidebar-title includes-free-title">Includes Free</div>
+            <div class="sidebar-text">SanDisk - 64GB Extreme PRO SDXC UHS-I Memory Card</div>
+            <div class="sidebar-text">Ruggard - Journey 34 DSLR Shoulder Bag (Black)</div>
+            <div class="sidebar-text">Watson - LP-E6N Lithium-Ion Battery Pack (7.2V, 1900mAh)</div>
+            </div>
+          </div>
+        </div>
+      <nav id="cart-header">
+        <div id="cart-header-content">
+          <div id="cart-header-left">
+            <span><img src="pictures/canon_header.jpg" id="canon-header-image"></span>
+            <span id="cart-header-text">Canon EOS 5D Mark IV DSLR Camera</span>
+            <div id="header-stars" class="review-stars">
+              <svg class="stars" viewBox="0 0 371.5 66.3" width="100%" height="100%"><polygon points="42.2,25.3 33.2,0 24.2,25.3 0,25.3 19.7,40.2 12.7,66.3 33.2,50.7 53.7,66.3 46.6,40.2 66.3,25.3"></polygon><polygon points="118.5,25.3 109.5,0 100.5,25.3 76.3,25.3 96,40.2 89,66.3 109.5,50.7 130,66.3 122.9,40.2 142.6,25.3"></polygon><polygon points="194.8,25.3 185.8,0 176.8,25.3 152.6,25.3 172.3,40.2 165.3,66.3 185.8,50.7 206.3,66.3 199.2,40.2 219,25.3"></polygon><polygon points="271.1,25.3 262.1,0 253.1,25.3 229,25.3 248.7,40.2 241.6,66.3 262.1,50.7 282.6,66.3 275.6,40.2 295.3,25.3"></polygon><polygon points="371.5,25.3 347.4,25.3 338.4,0 329.4,25.3 305.2,25.3 324.9,40.2 317.9,66.3 338.4,50.7 358.8,66.3 351.8,40.2"></polygon></svg>
+            </div>
+          </div>
+          <form id="cart-header-form">
+            <div id="cart-header-selection">
+              <div id="header-size" class="cart-header-dropdowns">
+                <div class="header-dropdown-text">Style:</div>
+                <select name="header-style" id="select1" class="dropdown select1">
+                  <option value="body-only">Body Only</option>
+                  <option value="with-canon-log">With Canon Log</option>
+                  <option value="with-24-70mm">With 24-70mm Lens</option>
+                  <option value="with-24-105mm">With 24-105mm f/4L II Lens</option>
+                </select>
+              </div>
+              <div id="header-color" class="cart-header-dropdowns">
+                <div class="header-dropdown-text">Configuration:</div>
+                <select name="header-configuration" class="dropdown select1">
+                  <option value="base">Base</option>
+                  <option value="with-basic-kit">With Basic Kit</option>
+                  <option value="with-deluxe-kit">With Deluxe Kit</option>
+                  <option value="with-video-kit">With Video Kit</option>
+                  <option value="with-microphone-kit">With Microphone Kit</option>
+                </select>
+              </div>
+              <div id="header-quantity" class="cart-header-dropdowns">
+               <div class="header-dropdown-text">Quantity:</div>
+               <select name="header-quantity" class="dropdown select1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="5">6</option>
+                <option value="5">7</option>
+              </select>
+            </div>
+            <div id="cart-header-button-wrapper">
+              <button id="cart-header-button">Add to Cart</button>
+            </div>
+          </form>
+        </div>
+      </nav>
+    <!--   <nav id="left-navbar">
+        <div class="left-navbar-1 left-nav-div">1</div>
+        <div class="left-navbar-2 left-nav-div">2</div>
+        <div class="left-navbar-3 left-nav-div">3</div>
+        <div class="left-navbar-4 left-nav-div">4</div>
+        <div class="left-navbar-5 left-nav-div">5</div>
+        <div class="left-navbar-6 left-nav-div">6</div>
+        <div class="left-navbar-7">7</div>
+      </nav> -->
+<!-- <nav id="info-footer">
+<div id="footer-buttons-wrapper">
+<table>
+<tr>
+<td><button class="footer-button" id="footer-overview">OVERVIEW</button></td>
+<td><button class="footer-button" id="footer-specs">SPECS</button></td>
+<td><button class="footer-button" id="footer-quick-compare">QUICK COMPARE</button></td>
+<td><button class="footer-button" id="footer-reviews">REVIEWS&nbsp&nbsp<span class="footer-button-small-text">533</span></button></td>
+<td><button class="footer-button" id="footer-q-and-a">Q&A&nbsp&nbsp<span class="footer-button-small-text">155</span></button></td>
+<td><button class="footer-button" id="footer-add-on-savings">ADD-ON SAVINGS</button></td>
+<td><button class="footer-button" id="footer-accessories">ACCESSORIES</button></td>
+</table>
+</div>
+</nav> -->
+<div id="top-footer"></div>
+<!-- <div class="extra-space">
+</div> -->
+<!-- <div id="test-footer"></div> -->
+</body>
+</html>
